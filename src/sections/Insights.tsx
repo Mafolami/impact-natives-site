@@ -16,12 +16,12 @@ export default function Insights() {
         </motion.h2>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {insights.map((insight) => (
+          {insights.map((insight, index) => (
             <motion.div
               key={insight.id}
               className="bg-black/30 hover:bg-black/50 rounded-xl p-6 transition-all duration-500"
               initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1, transition: { duration: 0.6, delay: insight.id * 0.1, ease: [0.21, 0.47, 0.32, 0.98] } }}
+              animate={{ y: 0, opacity: 1, transition: { duration: 0.6, delay: index * 0.1, ease: [0.21, 0.47, 0.32, 0.98] } }}
             >
               <h3 className="text-xl font-serif font-bold mb-2">{insight.title}</h3>
               <p className="text-sm text-muted mb-2">{insight.date}</p>
