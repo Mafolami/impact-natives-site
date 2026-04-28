@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/about)",
+      "Bash(curl -v http://localhost:3000/about)",
+      "Bash(curl -s http://localhost:3000/work)",
+      "Bash(curl -s http://localhost:3000/contact)",
+      "Bash(sed -i \"1s/^/'use client';\\\\n\\\\n/\" src/sections/Manifesto.tsx)",
+      "Bash(sed -i \"1s/^/'use client';\\\\n\\\\n/\" src/sections/CaseStudies.tsx)",
+      "Bash(sed -i \"1s/^/'use client';\\\\n\\\\n/\" src/sections/Insights.tsx)",
+      "Bash(sed -i \"1s/^/'use client';\\\\n\\\\n/\" src/sections/WhyItMatters.tsx)",
+      "Bash(open *)",
+      "Bash(curl -s http://localhost:3001/work)",
+      "Bash(curl -v http://localhost:3001/work)",
+      "Bash(curl -s http://localhost:3000/work/systems-1)",
+      "Bash(curl -s http://localhost:3000/work/systems-3)"
+    ]
+  }
+}
