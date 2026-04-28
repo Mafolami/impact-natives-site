@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import { Variants } from "framer-motion";
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   initial: { y: 40, opacity: 0 },
   animate: { y: 0, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } },
 };
