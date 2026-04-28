@@ -14,7 +14,7 @@ export default function InsightsPage() {
           <motion.h1
             className="text-4xl md:text-5xl font-serif font-bold mb-12"
             initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] } }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] as const } }}
           >
             Insights
           </motion.h1>
