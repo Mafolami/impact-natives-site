@@ -7,8 +7,10 @@ export default function Lab() {
     const canvas = document.getElementById('lab-canvas') as HTMLCanvasElement;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    const ctx = context;
+    
 
     function resizeCanvas() {
       canvas.width = window.innerWidth;
@@ -60,6 +62,7 @@ export default function Lab() {
 
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
       particles.forEach((p) => {
         p.update();
         p.draw();
