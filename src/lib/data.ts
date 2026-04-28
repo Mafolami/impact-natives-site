@@ -148,7 +148,23 @@ export const caseStudies = [
   export const insights = [
     {
       id: "insight-1",
-      title: "Why Systems Thinking Matters",
-      date: "2026-01-01"
+      title: "Why Systems Thinking Matters in Social Innovation",
+      date: "2026-01-01",
+      excerpt:
+        "Understanding systems thinking helps organizations move beyond surface-level interventions into structural change."
+    },
+    {
+      id: "insight-2",
+      title: "Designing for Communities, Not Users",
+      date: "2026-01-10",
+      excerpt:
+        "Real impact design requires shifting from user-centric thinking to community-first systems."
+    },
+    {
+      id: "insight-3",
+      title: "The Future of Impact Infrastructure",
+      date: "2026-02-01",
+      excerpt:
+        "Infrastructure for social impact is evolving into modular, data-driven ecosystems."
     }
   ];
