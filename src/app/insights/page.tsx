@@ -20,7 +20,7 @@ export default function InsightsPage() {
           </motion.h1>
           <p className="text-muted mb-8">Journal-style reflections on systems thinking and social impact.</p>
           <div className="space-y-8">
-            {insights.map((insight) => (
+            {insights.map((insight, index) => (
               <motion.div
                 key={insight.id}
                 className="bg-black/30 hover:bg-black/50 rounded-xl p-8 transition-all duration-500"
@@ -28,7 +28,7 @@ export default function InsightsPage() {
                 animate={{
                   y: 0,
                   opacity: 1,
-                  transition: { duration: 0.6, delay: insight.id * 0.1, ease: [0.21, 0.47, 0.32, 0.98] },
+                  transition: { duration: 0.6, delay: index * 0.1, ease: [0.21, 0.47, 0.32, 0.98] },
                 }}
                 whileHover={{ scale: 1.02 }}
               >
