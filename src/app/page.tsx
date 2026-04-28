@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer';
 
 const fadeInUp = {
   initial: { y: 40, opacity: 0 },
-  animate: { y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] } },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 const staggerContainer = {
