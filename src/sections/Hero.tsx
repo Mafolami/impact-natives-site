@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1, transition: { duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] } }}
         >
-          Digital systems and innovation lab for social impact
+          Designing systems that make impact work
         </motion.p>
 
         <motion.div
