@@ -42,7 +42,7 @@ export default function Home() {
             >
               <p className="text-sm uppercase tracking-widest text-gray-400 mb-6">Systems. Impact. Systems.</p>
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold leading-tight mb-8 text-white">
-                Digital systems for social change
+                Designing systems that make impact work
               </h1>
             </motion.div>
 
