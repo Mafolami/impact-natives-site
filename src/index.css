@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-accent: hsl(var(--accent));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-card: hsl(var(--card));
+}
+
+:root {
+  --background: 0 0% 4%;
+  --foreground: 60 10% 96%;
+  --border: 0 0% 15%;
+  --accent: 12 66% 47%;
+  --muted-foreground: 0 0% 60%;
+  --card: 0 0% 6%;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { background: #0a0a0a; color: #f4f4f0; cursor: none !important; }
+body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #f4f4f0; margin: 0; }
+* { cursor: none !important; }
+
+.font-serif { font-family: 'Cormorant Garamond', serif; }
+.font-mono  { font-family: 'JetBrains Mono', monospace; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }

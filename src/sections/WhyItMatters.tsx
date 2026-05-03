@@ -5,6 +5,12 @@ import { motion } from 'framer-motion';
 export default function WhyItMatters() {
   return (
     <section className="relative py-20 px-6">
+      <div className="mb-6">
+        <div className="mono text-[11px] text-white/30">01</div>
+        <div className="mono text-[11px] tracking-[0.12em] uppercase text-white/40">
+          WHY IT MATTERS
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto grid gap-12 md:grid-cols-2 items-start">
         <motion.div
           className="space-y-6"

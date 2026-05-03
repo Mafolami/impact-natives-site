@@ -16,7 +16,17 @@
       "Bash(curl -s http://localhost:3001/work)",
       "Bash(curl -v http://localhost:3001/work)",
       "Bash(curl -s http://localhost:3000/work/systems-1)",
-      "Bash(curl -s http://localhost:3000/work/systems-3)"
+      "Bash(curl -s http://localhost:3000/work/systems-3)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(echo\"- src/app directory removed\")",
+      "Bash(curl -s http://localhost:5174/insights)",
+      "Bash(curl -s http://localhost:5174/)",
+      "Bash(curl *)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(kill *)",
+      "Bash(pkill -f \"node\")"
     ]
   }
 }

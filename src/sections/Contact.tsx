@@ -25,6 +25,12 @@ export default function Contact() {
 
   return (
     <section className="relative py-20 px-6">
+      <div className="mb-6">
+        <div className="mono text-[11px] text-white/30">01</div>
+        <div className="mono text-[11px] tracking-[0.12em] uppercase text-white/40">
+          CONTACT US
+        </div>
+      </div>
       <div className="max-w-3xl mx-auto">
         {submitStatus && (
           <motion.div

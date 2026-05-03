@@ -146,25 +146,58 @@ export const caseStudies = [
   ];
   
   export const insights = [
-    {
-      id: "insight-1",
-      title: "Why Systems Thinking Matters in Social Innovation",
-      date: "2026-01-01",
-      excerpt:
-        "Understanding systems thinking helps organizations move beyond surface-level interventions into structural change."
-    },
-    {
-      id: "insight-2",
-      title: "Designing for Communities, Not Users",
-      date: "2026-01-10",
-      excerpt:
-        "Real impact design requires shifting from user-centric thinking to community-first systems."
-    },
-    {
-      id: "insight-3",
-      title: "The Future of Impact Infrastructure",
-      date: "2026-02-01",
-      excerpt:
-        "Infrastructure for social impact is evolving into modular, data-driven ecosystems."
-    }
-  ];
+  {
+    id: 'insight-1',
+    title: 'Why Systems Thinking Matters in Social Innovation',
+    date: 'January 2026',
+    category: 'Systems',
+    readTime: '5 min read',
+    excerpt:
+      'Understanding systems thinking helps organizations move beyond surface-level interventions into structural change. We explore how causal loops and feedback dynamics reframe what it means to "solve" a problem.',
+  },
+  {
+    id: 'insight-2',
+    title: 'Designing for Communities, Not Users',
+    date: 'February 2026',
+    category: 'Design',
+    readTime: '7 min read',
+    excerpt:
+      'Real impact design requires shifting from user-centric thinking to community-first systems. When the community is the client, design principles transform entirely.',
+  },
+  {
+    id: 'insight-3',
+    title: 'The Future of Impact Infrastructure',
+    date: 'March 2026',
+    category: 'Technology',
+    readTime: '6 min read',
+    excerpt:
+      'Infrastructure for social impact is evolving into modular, data-driven ecosystems. We examine the building blocks emerging across sectors and geographies.',
+  },
+  {
+    id: 'insight-4',
+    title: 'On Building for Scale Without Losing Purpose',
+    date: 'March 2026',
+    category: 'Strategy',
+    readTime: '8 min read',
+    excerpt:
+      'Scaling impact without diluting mission requires intentional architecture. We share hard-won lessons from five engagements where scale and purpose intersected.',
+  },
+  {
+    id: 'insight-5',
+    title: 'Digital Tools as Accountability Mechanisms',
+    date: 'February 2026',
+    category: 'Technology',
+    readTime: '5 min read',
+    excerpt:
+      'The most underutilized function of digital platforms in the development sector is accountability. We look at how transparency by design changes outcomes.',
+  },
+  {
+    id: 'insight-6',
+    title: 'Systems Thinking in International Development',
+    date: 'January 2026',
+    category: 'Systems',
+    readTime: '9 min read',
+    excerpt:
+      'International development is ripe for a systems revolution. Donor cycles, indicator fixation, and siloed programming all resist the complex adaptive systems reality on the ground.',
+  },
+];
