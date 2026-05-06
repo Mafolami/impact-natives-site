@@ -212,10 +212,10 @@ export default function Home() {
           {WORK_ROWS.map((row, i) => (
             <ScrollReveal key={row.num} delay={i * 0.1}>
               <Link href={`/work#${row.slug}`}>
-                <div className="border-t border-white/10 py-8 flex items-baseline justify-between group hover:bg-white/[0.02] transition-colors px-2 -mx-2">
+                <div className="border-t border-white/10 py-20 flex items-baseline justify-between group hover:bg-white/[0.02] transition-colors px-2 -mx-2">
                   <span className="font-mono text-[13px] text-white/25 group-hover:text-[#c74b28] transition-colors w-12">{row.num}</span>
                   <div className="flex-1 px-8">
-                    <p className="font-serif text-[clamp(20px,2.5vw,32px)] text-white/85 group-hover:italic transition-all">{row.title}</p>
+                    <p className="sans-serif text-[clamp(10px,2.5vw,30px)] text-white/85 group-hover:italic transition-all">{row.title}</p>
                     <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-white/30 mt-1">{row.client}</p>
                   </div>
                   <div className="hidden md:block w-40 h-8 opacity-0 group-hover:opacity-100 transition-opacity mx-8">
@@ -250,7 +250,7 @@ export default function Home() {
                     <span className="font-mono text-[10px] uppercase tracking-[0.15em]" style={{ color: "#c74b28" }}>{card.tag}</span>
                     <span className="font-mono text-[10px] text-white/30">{card.date}</span>
                   </div>
-                  <p className={`font-serif text-[20px] leading-snug text-white/85 flex-1 ${card.italic ? "italic" : ""}`}>{card.title}</p>
+                  <p className={`sans-serif text-[20px] leading-snug text-white/85 flex-1 ${card.italic ? "italic" : ""}`}>{card.title}</p>
                   <div className="mt-6 w-8 h-px bg-white/20" />
                 </div>
               </Link>
@@ -263,10 +263,10 @@ export default function Home() {
       <section className="px-6 md:px-12 py-48 border-t border-white/[0.06] text-center" style={{ background: "linear-gradient(to bottom, #0a0a0a, #0f0a08)" }}>
         <ScrollReveal>
           <h2 className="font-serif font-light mb-6" style={{ fontSize: "clamp(48px, 7vw, 96px)" }}>
-          Turn intent into execution pathways.
+          Turn intent into approved programmes.
           </h2>
           <p className="font-serif text-[16px] text-white/45 max-w-lg mx-auto mb-10 leading-relaxed">
-          We work with corporate CSR teams, corporate foundations, and institutional program owners responsible for turning budgets into approved, executable programmes.
+          We help teams, organizations, and programme owners turn budgets into structured, approval-ready projects.
           </p>
           <Link href="/contact">
             <span className="inline-block font-mono text-[11px] uppercase tracking-[0.2em] px-8 py-4 border border-white/30 text-white/70 hover:text-white hover:border-white/60 transition-all">

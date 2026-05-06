@@ -71,7 +71,7 @@ export default function Insights() {
         {filtered.map((entry, i) => (
           <ScrollReveal key={entry.slug} delay={i * 0.05}>
             <Link href={`/insights#${entry.slug}`}>
-            <div className="border-b border-white/[0.06] py-10 px-2 -mx-2 hover:bg-white/[0.02] transition-colors">
+            <div className="border-b border-white/[0.06] py-30   px-2 -mx-2 hover:bg-white/[0.02] transition-colors">
   
               <div className="grid grid-cols-1 md:grid-cols-[420px_1fr] gap-10 items-start">
 
@@ -85,10 +85,10 @@ export default function Insights() {
                 </div>
 
                 {/* TEXT (RIGHT) */}
-                <div className="grid items-start" style={{ gridTemplateColumns: "140px 1fr 100px", gap: "2rem" }}>
+                <div className="grid items-start" style={{ gridTemplateColumns: "140px 1fr 100px", gap: "1rem" }}>
                   
                   <div>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.12em] mb-2" style={{ color: ACCENT }}>
+                    <p className="sans-mono text-[10px] uppercase tracking-[0.12em] mb-2" style={{ color: ACCENT }}>
                       {entry.tag}
                     </p>
                     <p className="font-mono text-[10px] text-white/30">
@@ -98,18 +98,18 @@ export default function Insights() {
 
                   <div>
                     <p
-                      className={`font-serif leading-tight mb-3 ${entry.italic ? "italic" : ""}`}
+                      className={`sans-serif leading-tight mb-12 ${entry.italic ? "italic" : ""}`}
                       style={{ fontSize: "clamp(22px, 2.5vw, 40px)" }}
                     >
                       {entry.title}
                     </p>
-                    <p className="font-serif text-[14px] text-white/40 leading-relaxed">
+                    <p className="sans-serif text-[18px] text-white/40 leading-relaxed">
                       {entry.excerpt}
                     </p>
                   </div>
 
                   <div className="flex items-start justify-end">
-                    <span className="font-mono text-[10px] border border-white/20 px-2 py-1 text-white/40">
+                    <span className="sans-mono text-[10px] border border-white/20 px-2 py-1 text-white/40">
                       {entry.readTime}
                     </span>
                   </div>

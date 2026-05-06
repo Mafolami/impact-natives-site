@@ -51,33 +51,33 @@ export default function About() {
       <SectionLabel number="03" label="ABOUT IMPACT NATIVES" />
       <ScrollReveal>
   <h1
-    className="font-serif font-light leading-tight mb-12"
-    style={{ fontSize: "clamp(56px, 8vw, 110px)" }}
+    className="sans-serif font-light leading-tight mb-12"
+    style={{ fontSize: "clamp(56px, 8vw, 50px)" }}
   >
     What is <em>Impact Natives?</em>
   </h1>
 
-  <div className="flex flex-col md:flex-row gap-1 items-start">
+  <div className="grid grid-cols-1 md:grid-cols-[650px_1fr] gap-5 items-start">
     
     {/* TEXT */}
-    <div className="max-w-2xl space-y-6">
-      <p className="sans-serif text-[20px] text-white/60 leading-relaxed">
+    <div className="max-w-1xl space-y-6">
+      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
         Impact Natives exists to address a structural failure in how institutions move from intent to execution: strong ideas that do not survive the transition into funded, operational delivery.
       </p>
 
-      <p className="sans-serif text-[20px] text-white/60 leading-relaxed">
+      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
         Across programmes in public systems, CSR portfolios, and development initiatives, we saw the same pattern. Promising interventions stall not because the ideas are weak, but because the systems around them are not structured for execution at scale.
       </p>
 
-      <p className="sans-serif text-[20px] text-white/55 leading-relaxed">
+      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
         Financing is misaligned. Delivery capacity is fragmented. Governance requirements are incomplete at the design stage.
       </p>
 
-      <p className="sans-serif text-[20px] text-white/60 leading-relaxed">
+      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
         We focus on the layer that connects intent to implementation.
       </p>
 
-      <p className="sans-serif text-[20px] text-white/60 leading-relaxed">
+      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
         We design structured decision inputs, intervention models, and implementation pathways that can survive institutional approval and move into delivery.
       </p>
 
