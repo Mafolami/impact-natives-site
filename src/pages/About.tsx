@@ -12,7 +12,7 @@ const PRINCIPLES = [
 ];
 
 const TEAM = [
-  { initials: "MA", name: "We are a team of systems, policy, and delivery practitioners with experience working across public institutions, foundations, and development programmes. Our work combines structured thinking with practical execution experience to turn complex priorities into clear, decision-ready outputs.", role: "Founder", bio: "" },
+  { initials: "MA", name: "We are a team of systems, policy, and delivery practitioners with experience working across public and private institutions, foundations, and development programmes. Our work combines structured thinking with practical execution experience to turn complex priorities into clear, decision-ready outputs.", role: "Founder", bio: "" },
 ];
 
 const corners = [
