@@ -25,15 +25,15 @@ function Router() {
     <>
       <ScrollToTop />
       <Navbar />
-      <main className="min-h-[100dvh] pt-24 pb-0 relative z-10">
-        <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/work" component={Work} />
-          <Route path="/insights" component={Insights} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
+      <main className="min-h-[100dvh] pt-50 pb-0 relative z-10">
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/work" component={Work} />
+        <Route path="/insights" component={Insights} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
       </main>
       <Footer />
     </>

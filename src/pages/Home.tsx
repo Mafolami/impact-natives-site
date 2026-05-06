@@ -43,20 +43,26 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden -mt-24 pt-0">
         <ParticleField />
-        <div className="relative z-10 w-full px-6 md:px-12 pt-32">
+        <div className="relative z-10 w-full px-6 md:px-12 pt-0.2">
           <motion.h1
-            className="font-serif font-light leading-[1.0]"
-            style={{ fontSize: "clamp(56px, 9vw, 130px)" }}
+            className="sans-serif font-bold leading-[1.0]"
+            style={{ fontSize: "clamp(56px, 9vw, 100px)" }}
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            Turn{" "}
-            <span className="font-serif italic" style={{ color: "rgba(244,244,240,0.4)" }}>institutional intent</span> {" "}
-            into{" "}
-            <span className="font-serif italic" style={{ color: ACCENT }}>execution</span>{" "} 
-            
-            pathways.
+          <div>
+            Turn{" "} <br />
+            <span className="sans-serif italic" style={{ color: ACCENT }}>
+              institutional priorities
+            </span>
+          </div>
+          <div>
+            into{" "} <br />
+            <span className="sans-serif italic" style={{ color: ACCENT }}>
+              approved projects.
+            </span>
+          </div> 
           </motion.h1>
         </div>
         <motion.div
@@ -65,17 +71,17 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          <p className="font-serif text-[14px] text-white/50 leading-relaxed max-w-[260px] mb-6 text-center">
+          <p className="font-serif text-[18px] text-white/50 leading-relaxed max-w-[260px] mb-12 text-right">
           We help institutions convert priorities and budgets into structured, costed, approval-ready project options in 6 weeks.
           </p>
           <Link href="/work">
-            <span className="font-mono text-[15px] uppercase tracking-[0.15em] text-white/60 hover:text-white transition-colors">
+            <span className="font-mono text-[15px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors">
               WORK WITH US →
             </span>
           </Link>
         </motion.div>
         <div className="absolute left-6 bottom-12 z-10 flex flex-col items-center gap-2">
-          <p className="font-mono text-[10px] tracking-[0.2em] text-white/25 uppercase"
+          <p className="font-mono text-[10px] tracking-[0.2em] text-white/30 uppercase"
             style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
             SCROLL
           </p>
@@ -84,43 +90,44 @@ export default function Home() {
       </section>
 
       {/* MANIFESTO */}
-      <section ref={manifestoRef} className="px-6 md:px-24 py-40">
+      <section ref={manifestoRef} className="px-6 md:px-14 py-40">
         <SectionLabel number="01" label="MANIFESTO" />
         <ScrollReveal>
-          <p className="font-serif leading-[1.15] mb-16 font-light"
-            style={{ fontSize: "clamp(36px, 5.5vw, 72px)" }}>
-            Impact is change that follows action.
+          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[720px] mx-0"
+            style={{ fontSize: "clamp(36px, 5.5vw, 35px)" }}>
+            Ideas are not the problem.
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <p className="font-serif leading-[1.15] mb-16 font-light"
-            style={{ fontSize: "clamp(36px, 5.5vw, 72px)" }}>
-            Intent alone is not enough.
+          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[auto] mx-0"
+            style={{ fontSize: "clamp(36px, 5.5vw, 35px)" }}>
+            Most institutions already have more priorities than they can move forward.
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <p className="font-serif leading-[1.15] mb-16 font-light"
-            style={{ fontSize: "clamp(36px, 5.5vw, 72px)" }}>
-            Most initiatives do not fail because ideas are missing.
+          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[auto] mx-0"
+            style={{ fontSize: "clamp(36px, 5.5vw, 35px)" }}>
+            The gap is between intent and a decision that can be approved.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
-          <p className="font-serif italic leading-[1.15] mb-16"
-            style={{ fontSize: "clamp(36px, 5.5vw, 72px)", color: ACCENT, fontWeight: 300 }}>
-            They fail because ideas are never translated into structured options that can move through institutional systems.
+          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[375px] mx-0"
+            style={{ fontSize: "clamp(36px, 5.5vw, 35px)", color: ACCENT, fontWeight: 300 }}>
+            Budgets stall. Proposals circulate. Work does not move.
           </p>
         </ScrollReveal>
         <motion.p
-          className="font-serif leading-[1.15] mb-16 font-light"
-          style={{ fontSize: "clamp(36px, 5.5vw, 72px)", opacity: thirdOpacity, color: "rgba(244,244,240,0.35)" }}
+            className="sans-serif leading-[1.15] mb-16 font-light max-w-[auto] mx-0"
+          style={{ fontSize: "clamp(36px, 5.5vw, 35px)", opacity: thirdOpacity, color: "rgba(244,244,240,0.35)" }}
         >
-          Execution breaks before implementation begins.
+          We structure priorities into options decision-makers can evaluate and approve.
         </motion.p>
         <ScrollReveal delay={0.1}>
-          <p className="font-serif leading-[1.15] mb-24 font-light"
-            style={{ fontSize: "clamp(36px, 5.5vw, 72px)" }}>
-            Budgets exist. Options are unclear. We build the decision layer between{" "}
-            <em>intent and execution</em> inside institutions.
+          <p className="sans-serif leading-[1.15] mb-3 italic font-light max-w-[720px] ml-auto text-right"
+            style={{ fontSize: "clamp(20px, 5.5vw, 5px)" }}
+            >
+            Impact begins{" "}
+            <em> when decisions become executable.</em>
           </p>
         </ScrollReveal>
         <div className="border-t border-white/10 pt-8">
@@ -133,10 +140,10 @@ export default function Home() {
         <SectionLabel number="02" label="CAPABILITIES" />
         <div className="grid md:grid-cols-2 gap-16 md:gap-24">
           <ScrollReveal>
-            <h2 className="font-serif font-light leading-tight mb-8" style={{ fontSize: "clamp(32px, 4vw, 56px)" }}>
-              Engineering <em>pathways</em> to scale.
+            <h2 className="sans-serif sans-light leading-tight mb-8" style={{ fontSize: "clamp(32px, 4vw, 56px)" }}>
+            Turning <em>priorities</em> into decision-ready projects.
             </h2>
-            <p className="font-serif text-[15px] text-white/45 leading-relaxed max-w-sm">
+            <p className="sans-serif text-[15px] text-white/45 leading-relaxed max-w-sm">
             We work on the gap between intent and execution inside institutions. We structure priorities into clear options, costs, and implementation pathways that decision-makers can evaluate and approve.
             </p>
           </ScrollReveal>
@@ -147,8 +154,8 @@ export default function Home() {
                   <div className="flex items-baseline gap-8">
                     <span className="font-mono text-[12px] text-white/25 group-hover:text-[#c74b28] transition-colors" style={{ minWidth: "2.5rem" }}>{cap.num}</span>
                     <div>
-                      <p className="font-serif text-[20px] text-white/80 group-hover:italic transition-all">{cap.title}</p>
-                      <p className="font-serif text-[13px] text-white/35 mt-2 leading-relaxed max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
+                      <p className="mono-serif text-[20px] text-white/80 group-hover:italic transition-all">{cap.title}</p>
+                      <p className="sans-serif text-[13px] text-white/35 mt-2 leading-relaxed max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
                         {cap.desc}
                       </p>
                     </div>
@@ -168,24 +175,24 @@ export default function Home() {
             {DATA_POINTS.map((dp, i) => (
               <ScrollReveal key={i} delay={i * 0.15} className="mb-20">
                 <div className="border-l-2 pl-6" style={{ borderColor: "#c74b28" }}>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] mb-3" style={{ color: "#c74b28" }}>DATA POINT</p>
-                  <h3 className="font-serif font-light mb-3" style={{ fontSize: "clamp(28px, 3.5vw, 52px)" }}>{dp.label}</h3>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-white/35 leading-relaxed">{dp.stat}</p>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] mb-3" style={{ color: "#c74b28" }}>KEY REALITY</p>
+                  <h3 className="sans-serif font-light mb-3" style={{ fontSize: "clamp(28px, 3.5vw, 30px)" }}>{dp.label}</h3>
+                  <p className="sans-mono text-[10px] uppercase tracking-[0.1em] text-white/35 leading-relaxed">{dp.stat}</p>
                 </div>
               </ScrollReveal>
             ))}
           </div>
           <div className="md:pt-8">
             <ScrollReveal>
-              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/35 mb-8">THE INTERVENTION</p>
+              <p className="font-mono text-[20px] uppercase tracking-[0.15em] text-white/35 mb-8">THE INTERVENTION</p>
               <div className="space-y-5">
-                <p className="font-serif italic text-[20px] text-white/55 leading-relaxed">Impact Natives exists to close the gap between institutional intent and structured execution pathways.</p>
-                <p className="font-serif italic text-[20px] text-white/55 leading-relaxed">We do not focus on delivery or implementation. We focus on the point where priorities fail to become structured, comparable options that decision systems can evaluate.</p>
-                <p className="font-serif italic text-[20px] text-white/55 leading-relaxed">By treating structuring as a discipline, we convert fragmented intent into clear, costed, approval-ready choices.</p>
+                <p className="sans-serif text-[20px] text-white/55 leading-relaxed">Impact Natives exists to close the gap between institutional intent and structured execution pathways.</p>
+                <p className="sans-serif text-[20px] text-white/55 leading-relaxed">We do not focus on delivery or implementation. We focus on the point where priorities fail to become structured, comparable options that decision systems can evaluate.</p>
+                <p className="sans-serif text-[20px] text-white/55 leading-relaxed">By treating structuring as a discipline, we convert fragmented intent into clear, costed, approval-ready choices.</p>
               </div>
               <div className="mt-10">
                 <Link href="/about">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/40 hover:text-white transition-colors">READ OUR PRINCIPLES →</span>
+                  <span className="font-mono text-[15px] uppercase tracking-[0.15em] text-white/40 hover:text-white transition-colors">READ OUR PRINCIPLES →</span>
                 </Link>
               </div>
             </ScrollReveal>

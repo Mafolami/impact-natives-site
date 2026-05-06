@@ -12,10 +12,7 @@ const PRINCIPLES = [
 ];
 
 const TEAM = [
-  { initials: "EA", name: "Elena Aris", role: "SYSTEMS ARCHITECT", bio: "Former digital infrastructure lead at UN. Specialises in low-bandwidth protocol design." },
-  { initials: "JM", name: "Julian Minta", role: "DELIVERY DIRECTOR", bio: "Led national health data rollouts across East Africa. Obsessed with last-mile operational design." },
-  { initials: "SN", name: "Sarah Ndiaye", role: "POLICY ENGINEERING", bio: "Translates legal mandates into logic gates. Background in constitutional law and systems theory." },
-  { initials: "RK", name: "Rajiv Kapoor", role: "RESOURCE MOBILISATION", bio: "Structures blended finance mechanisms for public goods. Ex-World Bank." },
+  { initials: "MA", name: "Michael Afolami", role: "Founder", bio: "" },
 ];
 
 const corners = [
@@ -73,7 +70,7 @@ export default function About() {
           We design structured decision inputs, intervention models, and implementation pathways that can survive institutional approval and move into delivery.
           </p>
           <p className="font-serif italic text-[20px] text-white/55 leading-relaxed">
-            We are a collective of systems engineers, policy designers, and operational veterans building the scaffolding that makes impact work.
+          We are a team that structures how institutions turn priorities into approved projects and execution-ready plans.
           </p>
         </div>
       </ScrollReveal>

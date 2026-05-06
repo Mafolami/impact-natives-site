@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 
-const TICKER_ITEMS = ["SYSTEMS THINKING", "DIGITAL PUBLIC INNOVATION", "EXECUTION INFRASTRUCTURE", "EMERGING MARKETS", "SOCIAL TRANSFORMATION"];
+const TICKER_ITEMS = ["EXECUTION INFRASTRUCTURE", "DECISION ARCHITECTURE", "INSTITUTIONAL STRUCTURING", "APPROVAL READINESS", "PROGRAMME DESIGN"];
 const ticker = [...TICKER_ITEMS, ...TICKER_ITEMS].map((t) => `${t} · `).join("");
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
             info@impactnatives.com
           </a>
           <p className="font-serif text-[14px] text-white/40">
-            Operating from Lagos · remote
+            Lagos · Nigeria
           </p>
         </div>
         <div className="flex gap-16">
@@ -30,9 +30,9 @@ export default function Footer() {
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/30 mb-6">SOCIAL</p>
             <div className="flex flex-col gap-3">
-              <a href="#" className="font-serif text-[15px] text-white/60 hover:text-white transition-colors block">LinkedIn</a>
+              <a href="https://linkedin.com/company/impact-natives" className="font-serif text-[15px] text-white/60 hover:text-white transition-colors block">LinkedIn</a>
               <a href="#" className="font-serif text-[15px] text-white/60 hover:text-white transition-colors block">Twitter</a>
-              <Link href="/lab"><span className="font-mono text-[10px] text-white/20 hover:text-white/40 transition-colors block mt-2">/lab</span></Link>
+              
             </div>
           </div>
         </div>
