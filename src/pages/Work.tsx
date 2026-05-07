@@ -16,7 +16,7 @@ const PROJECTS = [
     effort: "We consolidated fragmented internal priorities into a single decision framework. Three distinct youth employment models were designed with clear differences in cost structure, implementation logic, and partner dependency. Each option was translated into a board-readable format aligned with internal governance requirements, including risk flags and implementation feasibility notes.",
     outcome: "The foundation moved from fragmented programme proposals to a structured decision set that enabled internal comparison and selection within a defined approval cycle. The engagement created a repeatable format for evaluating future CSR investments in youth employment.",
     // SVG: U-curve (recovery arc)
-    image: "/public/yep.png",
+    image: "yep.png",
   },
   {
     id: "csr-data",
@@ -29,7 +29,7 @@ const PROJECTS = [
     effort: "We mapped all active programme investments and identified structural overlaps, duplication of outcomes, and misaligned funding logic. A consolidated portfolio structure was designed, grouping initiatives into three investment categories with clear decision criteria for continuation, merger, or phase-out.",
     outcome: "The organisation gained a structured portfolio view that supported clearer allocation decisions in the next funding cycle and reduced internal duplication across overlapping programme areas.",
     // SVG: declining then flat line (data visibility)
-image: "/public/csr.png",
+image: "csr.png",
   },
   {
     id: "climate-finance",
@@ -42,7 +42,7 @@ image: "/public/csr.png",
     effort: "We synthesised fragmented technical proposals into three viable intervention models, each aligned to funding criteria, implementation feasibility, and institutional risk thresholds. A final option was developed into a structured funding submission package with defined governance, cost breakdown, and implementation sequencing.",
     outcome: "The submission moved from fragmented technical inputs to a single structured funding-ready intervention aligned to donor and institutional requirements. The process established a reusable template for future climate adaptation funding windows.",
     // SVG: declining line (disbursement compression)
-    image: "/public/flood.png",
+    image: "/flood.png",
   },
 ];
 
