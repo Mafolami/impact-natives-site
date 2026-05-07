@@ -46,19 +46,19 @@ export default function Home() {
         <div className="relative z-10 w-full px-6 md:px-12 pt-0.2">
           <motion.h1
             className="sans-serif font-bold leading-[1.0]"
-            style={{ fontSize: "clamp(56px, 9vw, 100px)" }}
+            style={{ fontSize: "clamp(56px, 9vw, 70px)" }}
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
           <div>
-            Turn{" "} <br />
+            Turn{" "} 
             <span className="sans-serif italic" style={{ color: ACCENT }}>
               institutional priorities
             </span>
           </div>
           <div>
-            into{" "} <br />
+            into{" "} 
             <span className="sans-serif italic" style={{ color: ACCENT }}>
               approved projects.
             </span>
@@ -66,17 +66,23 @@ export default function Home() {
           </motion.h1>
         </div>
         <motion.div
-          className="absolute bottom-12 right-12 text-right z-10"
+          className="absolute bottom-2 right-12 text-right z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          <p className="font-serif text-[18px] text-white/50 leading-relaxed max-w-[260px] mb-12 text-right">
+          <p className="sans-serif text-[18px] text-white/50 leading-relaxed max-w-[260px] mb-1 text-right">
+          <br />
+          <br />
+          <br />
           We help institutions convert priorities and budgets into structured, costed, approval-ready project options in 6 weeks.
           </p>
           <Link href="/work">
             <span className="font-mono text-[15px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors">
-              WORK WITH US →
+            <br />
+            <br />
+            <br />
+            WORK WITH US →
             </span>
           </Link>
         </motion.div>
@@ -93,46 +99,49 @@ export default function Home() {
       <section ref={manifestoRef} className="px-6 md:px-14 py-40">
         <SectionLabel number="01" label="MANIFESTO" />
         <ScrollReveal>
-          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[720px] mx-0"
-            style={{ fontSize: "clamp(36px, 5.5vw, 35px)" }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[920px] mx-50"
+            style={{ fontSize: "clamp(36px, 5.5vw, 60px)" }}>
             Ideas are not the problem.
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[auto] mx-0"
-            style={{ fontSize: "clamp(36px, 5.5vw, 35px)" }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-50"
+            style={{ fontSize: "clamp(36px, 5.5vw, 60px)" }}>
             Most institutions already have more priorities than they can move forward.
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[auto] mx-0"
-            style={{ fontSize: "clamp(36px, 5.5vw, 35px)" }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-50"
+            style={{ fontSize: "clamp(36px, 5.5vw, 60px)" }}>
             The gap is between intent and a decision that can be approved.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
-          <p className="sans-serif leading-[1.15] mb-16 font-light max-w-[375px] mx-0"
-            style={{ fontSize: "clamp(36px, 5.5vw, 35px)", color: ACCENT, fontWeight: 300 }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[620px] mx-50"
+            style={{ fontSize: "clamp(36px, 5.5vw, 60px)", color: ACCENT, fontWeight: 300 }}>
             Budgets stall. Proposals circulate. Work does not move.
           </p>
         </ScrollReveal>
         <motion.p
-            className="sans-serif leading-[1.15] mb-16 font-light max-w-[auto] mx-0"
-          style={{ fontSize: "clamp(36px, 5.5vw, 35px)", opacity: thirdOpacity, color: "rgba(244,244,240,0.35)" }}
+            className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-50"
+          style={{ fontSize: "clamp(36px, 5.5vw, 60px)", opacity: thirdOpacity, color: "rgba(244,244,240,0.35)" }}
         >
           We structure priorities into options decision-makers can evaluate and approve.
         </motion.p>
         <ScrollReveal delay={0.1}>
-          <p className="sans-serif leading-[1.15] mb-3 italic font-light max-w-[720px] ml-auto text-right"
+          <p className="sans-serif leading-[1.15] mb-1 3 italic font-light max-w-[720px] ml-auto text-right"
             style={{ fontSize: "clamp(20px, 5.5vw, 5px)" }}
             >
+              <br />
+              <br />
+              <br />
             Impact begins{" "}
             <em> when decisions become executable.</em>
           </p>
         </ScrollReveal>
-        <div className="border-t border-white/10 pt-8">
+        
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/30 text-right">— IMPACT NATIVES</p>
-        </div>
+        
       </section>
 
       {/* CAPABILITIES */}
@@ -150,12 +159,12 @@ export default function Home() {
           <div>
             {CAPABILITIES.map((cap, i) => (
               <ScrollReveal key={cap.num} delay={i * 0.1}>
-                <div className="border-t border-white/10 py-8 group">
+                <div className="border-t border-white/10 py-15 group">
                   <div className="flex items-baseline gap-8">
-                    <span className="font-mono text-[12px] text-white/25 group-hover:text-[#c74b28] transition-colors" style={{ minWidth: "2.5rem" }}>{cap.num}</span>
+                    <span className="font-mono text-[15px] text-white/25 group-hover:text-[#c74b28] transition-colors" style={{ minWidth: "2.5rem" }}>{cap.num}</span>
                     <div>
                       <p className="mono-serif text-[20px] text-white/80 group-hover:italic transition-all">{cap.title}</p>
-                      <p className="sans-serif text-[13px] text-white/35 mt-2 leading-relaxed max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
+                      <p className="sans-serif text-[18px] text-white/35 mt-2 leading-relaxed max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
                         {cap.desc}
                       </p>
                     </div>
@@ -168,16 +177,18 @@ export default function Home() {
       </section>
 
       {/* THE CONTEXT */}
-      <section className="px-6 md:px-12 py-32 border-t border-white/[0.06]">
+      <section className="relative px-6 md:px-12 py-32 border-t border-white/[0.06] bg-cover bg-center"
+        style={{ backgroundImage: "url('/context-bg3.png')" }}>
+          
         <SectionLabel number="03" label="THE CONTEXT" />
         <div className="grid md:grid-cols-2 gap-16 md:gap-32">
           <div>
             {DATA_POINTS.map((dp, i) => (
               <ScrollReveal key={i} delay={i * 0.15} className="mb-20">
                 <div className="border-l-2 pl-6" style={{ borderColor: "#c74b28" }}>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] mb-3" style={{ color: "#c74b28" }}>KEY REALITY</p>
-                  <h3 className="sans-serif font-light mb-3" style={{ fontSize: "clamp(28px, 3.5vw, 30px)" }}>{dp.label}</h3>
-                  <p className="sans-mono text-[10px] uppercase tracking-[0.1em] text-white/35 leading-relaxed">{dp.stat}</p>
+                  <p className="font-mono text-[20px] uppercase tracking-[0.15em] mb-3" style={{ color: "#c74b28" }}>KEY REALITY</p>
+                  <h3 className="sans-serif font-bold mb-3" style={{ fontSize: "clamp(28px, 3.5vw, 30px)" }}>{dp.label}</h3>
+                  <p className="sans-mono text-[15px] uppercase tracking-[0.1em] text-white/75 leading-relaxed">{dp.stat}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -250,7 +261,7 @@ export default function Home() {
                     <span className="font-mono text-[10px] uppercase tracking-[0.15em]" style={{ color: "#c74b28" }}>{card.tag}</span>
                     <span className="font-mono text-[10px] text-white/30">{card.date}</span>
                   </div>
-                  <p className={`sans-serif text-[20px] leading-snug text-white/85 flex-1 ${card.italic ? "italic" : ""}`}>{card.title}</p>
+                  <p className={`sans-serif text-[30px] leading-snug text-white/85 flex-1 ${card.italic ? "italic" : ""}`}>{card.title}</p>
                   <div className="mt-6 w-8 h-px bg-white/20" />
                 </div>
               </Link>
@@ -260,16 +271,38 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 md:px-12 py-48 border-t border-white/[0.06] text-center" style={{ background: "linear-gradient(to bottom, #0a0a0a, #0f0a08)" }}>
+      <section
+        className="px-6 md:px-12 py-48 border-t border-black/10 text-center"
+        style={{ background: "#013220" }}
+      >
         <ScrollReveal>
-          <h2 className="font-serif font-light mb-6" style={{ fontSize: "clamp(48px, 7vw, 96px)" }}>
-          Turn intent into approved programmes.
+          <h2
+            className="sans-serif font-bold mb-6"
+            style={{
+              fontSize: "clamp(38px, 7vw, 26px)",
+              color: "white"
+            }}
+          >
+            Turn intent into approved programmes.
           </h2>
-          <p className="font-serif text-[16px] text-white/45 max-w-lg mx-auto mb-10 leading-relaxed">
-          We help teams, organizations, and programme owners turn budgets into structured, approval-ready projects.
-          </p>
+
+          
           <Link href="/contact">
-            <span className="inline-block font-mono text-[11px] uppercase tracking-[0.2em] px-8 py-4 border border-white/30 text-white/70 hover:text-white hover:border-white/60 transition-all">
+            <span
+              className="inline-block font-mono text-[11px] uppercase tracking-[0.2em] px-8 py-4 border transition-all"
+              style={{
+                color: "white",
+                borderColor: "rgba(241, 244, 242, 0.4)"
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.borderColor = "white";
+                e.currentTarget.style.color = "white";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.borderColor = "rgba(241, 245, 242, 0.4)";
+                e.currentTarget.style.color = "white";
+              }}
+            >
               WORK WITH US
             </span>
           </Link>

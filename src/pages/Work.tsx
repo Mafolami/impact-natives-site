@@ -85,10 +85,10 @@ export default function Work() {
       <SectionLabel number="01" label="SELECTED WORK" />
 
       <ScrollReveal>
-        <h1 className="font-serif font-light leading-tight mb-4" style={{ fontSize: "clamp(56px, 8vw, 110px)" }}>
+        <h1 className="sans-serif font-light leading-tight mb-4" style={{ fontSize: "clamp(56px, 8vw, 80px)" }}>
         Field <em>Signals </em> in Practice
         </h1>
-        <p className="font-serif text-[16px] text-white/45 max-w-lg leading-relaxed mb-24">
+        <p className="sans-serif text-[16px] text-white/45 max-w-lg leading-relaxed mb-24">
         Structured scenarios showing how institutional priorities are translated into approval-ready options and decision pathways.
         </p>
       </ScrollReveal>
@@ -108,10 +108,10 @@ export default function Work() {
                 <div className="flex items-center gap-4 mb-6">
                   <span className="font-mono text-[11px] text-white/30">{project.year}</span>
                   <span className="block w-8 h-px bg-white/20" />
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em]" style={{ color: ACCENT }}>{project.client}</span>
+                  <span className="sans-serif text-[10px] uppercase tracking-[0.12em]" style={{ color: ACCENT }}>{project.client}</span>
                     </div>
 
-                <h2 className="font-serif font-light leading-tight mb-8" style={{ fontSize: "clamp(28px, 3.5vw, 52px)" }}>
+                <h2 className="sans-serif font-light leading-tight mb-8" style={{ fontSize: "clamp(28px, 3.5vw, 40px)" }}>
                   {project.title}
                 </h2>
 
@@ -126,17 +126,17 @@ export default function Work() {
                 <div className="grid grid-cols-2 gap-8 mb-10">
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-white/30 mb-4">THE CONTEXT</p>
-                    <p className="font-serif text-[14px] text-white/55 leading-relaxed">{project.context}</p>
+                    <p className="sans-serif text-[14px] text-white/55 leading-relaxed">{project.context}</p>
                   </div>
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-white/30 mb-4">THE EFFORT</p>
-                    <p className="font-serif text-[14px] text-white/55 leading-relaxed">{project.effort}</p>
+                    <p className="sans-serif text-[14px] text-white/55 leading-relaxed">{project.effort}</p>
                   </div>
                   </div>
 
                 <div className="border-t border-white/[0.06] pt-8">
                   <p className="font-mono text-[10px] uppercase tracking-[0.12em] mb-3" style={{ color: ACCENT }}>THE OUTCOME</p>
-                  <p className="font-serif italic text-[15px] text-white/60 leading-relaxed">{project.outcome}</p>
+                  <p className="sans-serif italic text-[15px] text-white/60 leading-relaxed">{project.outcome}</p>
                 </div>
               </div>
 

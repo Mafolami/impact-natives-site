@@ -92,7 +92,7 @@ export default function ParticleField() {
 
           if (dist2 < 180) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(244, 244, 240, ${0.15 - (dist2 / 120) * 0.15})`;
+            ctx.strokeStyle = `rgba(244, 244, 240, ${0.45 - (dist2 / 180) * 0.45})`;
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
             ctx.stroke();

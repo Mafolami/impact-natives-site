@@ -30,7 +30,7 @@ export default function ParticleField() {
 
     const initParticles = () => {
       particles = [];
-      const particleCount = Math.min(window.innerWidth < 768 ? 25 : 55, 70);
+      const particleCount = Math.min(window.innerWidth < 130 ? 25 : 5, 150);
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
@@ -54,9 +54,9 @@ export default function ParticleField() {
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'rgba(244, 244, 240, 0.55)'; // bone white
-      ctx.strokeStyle = 'rgba(244, 244, 240, 0.55)';
-      ctx.lineWidth = 0.8;
+      ctx.fillStyle = 'rgba(244, 244, 240, 5.55)'; // bone white
+      ctx.strokeStyle = 'rgba(3, 3, 1, 5.55)';
+      ctx.lineWidth = 1.8;
 
       particles.forEach((p, i) => {
         // Move
@@ -67,7 +67,7 @@ export default function ParticleField() {
         const dx = mouse.x - p.x;
         const dy = mouse.y - p.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 150) {
+        if (dist < 180) {
           p.x -= dx * 0.01;
           p.y -= dy * 0.01;
         }
@@ -92,7 +92,7 @@ export default function ParticleField() {
 
           if (dist2 < 180) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(244, 244, 240, ${0.45 - (dist2 / 180) * 0.45})`;
+            ctx.strokeStyle = `rgba(244, 244, 300, ${0.90 - (dist2 / 180) * 0.90})`;
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
             ctx.stroke();
