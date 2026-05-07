@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.re_YbhhwGiG_9ac2fDhw4zs6h5WJdDBAK3SU);
+const resend = new Resend(process.env.re_h7EVZgR2_EoXn5w1P8zdDBdk3559Ss5No);
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: "contact@impactnatives.com",
+      from: "contact@contact.impactnatives.com",
       to: "impactnativesltd@gmail.com",
       subject: "New Brief Submission",
       html: `

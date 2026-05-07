@@ -12,6 +12,7 @@ export default function Contact() {
   
     if (!allFilled) return;
   
+    console.log("Submitting form:", form);
     await fetch("/api/contact", {
       method: "POST",
       headers: {
