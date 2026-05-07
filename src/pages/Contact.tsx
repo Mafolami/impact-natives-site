@@ -7,9 +7,20 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const allFilled = form.institution.trim() && form.inquiry.trim() && form.context.trim();
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (allFilled) setSubmitted(true);
+  
+    if (!allFilled) return;
+  
+    await fetch("https://impact-natives.vercel.app/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+  
+    setSubmitted(true);
   }
 
   if (submitted) {

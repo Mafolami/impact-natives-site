@@ -41,9 +41,9 @@ export default function Home() {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center overflow-hidden -mt-24 pt-0">
+      <section className="relative min-h-screen flex items-center overflow-hidden -mt-54 pt-0">
         <ParticleField />
-        <div className="relative z-10 w-full px-6 md:px-12 pt-0.2">
+        <div className="relative z-10 w-full px-6 md:px-18 pt-0.2">
           <motion.h1
             className="sans-serif font-bold leading-[1.0]"
             style={{ fontSize: "clamp(56px, 9vw, 70px)" }}
@@ -66,25 +66,22 @@ export default function Home() {
           </motion.h1>
         </div>
         <motion.div
-          className="absolute bottom-2 right-12 text-right z-10"
+          className="absolute bottom-10 right-12 text-right z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          <p className="sans-serif text-[18px] text-white/50 leading-relaxed max-w-[260px] mb-1 text-right">
-          <br />
-          <br />
-          <br />
-          We help institutions convert priorities and budgets into structured, costed, approval-ready project options in 6 weeks.
-          </p>
-          <Link href="/work">
-            <span className="font-mono text-[15px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors">
-            <br />
-            <br />
-            <br />
-            WORK WITH US →
-            </span>
-          </Link>
+          <div className="text-right space-y-16">
+            <p className="sans-serif text-[16px] text-white/50 leading-relaxed max-w-[400px] ml-auto">
+              We help institutions convert priorities and budgets into structured, costed, approval-ready project options in 6 weeks.
+            </p>
+
+            <Link href="/work">
+              <span className="font-mono text-[15px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors">
+                WORK WITH US →
+              </span>
+            </Link>
+          </div>
         </motion.div>
         <div className="absolute left-6 bottom-12 z-10 flex flex-col items-center gap-2">
           <p className="font-mono text-[10px] tracking-[0.2em] text-white/30 uppercase"
@@ -129,18 +126,17 @@ export default function Home() {
           We structure priorities into options decision-makers can evaluate and approve.
         </motion.p>
         <ScrollReveal delay={0.1}>
-          <p className="sans-serif leading-[1.15] mb-1 3 italic font-light max-w-[720px] ml-auto text-right"
-            style={{ fontSize: "clamp(20px, 5.5vw, 5px)" }}
-            >
-              <br />
-              <br />
-              <br />
-            Impact begins{" "}
-            <em> when decisions become executable.</em>
+        <p
+            className="sans-serif leading-[1.15] italic font-light max-w-[720px] ml-auto text-right mb-10"
+            style={{ fontSize: "clamp(20px, 5.5vw, 40px)" }}
+          >
+            Impact begins <em>when decisions become executable.</em>
           </p>
         </ScrollReveal>
         
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/30 text-right">— IMPACT NATIVES</p>
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/30 text-right mt-6">
+          — IMPACT NATIVES
+        </p>
         
       </section>
 
@@ -161,10 +157,11 @@ export default function Home() {
               <ScrollReveal key={cap.num} delay={i * 0.1}>
                 <div className="border-t border-white/10 py-15 group">
                   <div className="flex items-baseline gap-8">
-                    <span className="font-mono text-[15px] text-white/25 group-hover:text-[#c74b28] transition-colors" style={{ minWidth: "2.5rem" }}>{cap.num}</span>
+                  <span className="font-mono text-[15px] text-[#c74b28] md:text-white/25 md:group-hover:text-[#c74b28] transition-colors" style={{ minWidth: "2.5rem" }} >{cap.num}</span>
                     <div>
                       <p className="mono-serif text-[20px] text-white/80 group-hover:italic transition-all">{cap.title}</p>
-                      <p className="sans-serif text-[18px] text-white/35 mt-2 leading-relaxed max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500">
+                      <p className="sans-serif text-[18px] text-white/35 mt-2 leading-relaxed 
+                        max-h-24 md:max-h-0 md:overflow-hidden md:group-hover:max-h-24 md:transition-all md:duration-500">
                         {cap.desc}
                       </p>
                     </div>
@@ -226,7 +223,7 @@ export default function Home() {
                 <div className="border-t border-white/10 py-20 flex items-baseline justify-between group hover:bg-white/[0.02] transition-colors px-2 -mx-2">
                   <span className="font-mono text-[13px] text-white/25 group-hover:text-[#c74b28] transition-colors w-12">{row.num}</span>
                   <div className="flex-1 px-8">
-                    <p className="sans-serif text-[clamp(20px,2.5vw,30px)] text-white/85 group-hover:italic transition-all">{row.title}</p>
+                    <p className="sans-serif text-[clamp(25px,2.5vw,30px)] text-white/85 group-hover:italic transition-all">{row.title}</p>
                     <p className="font-mono text-[15px] uppercase tracking-[0.1em] text-white/30 mt-1">{row.client}</p>
                   </div>
                   <div className="hidden md:block w-40 h-8 opacity-0 group-hover:opacity-100 transition-opacity mx-8">
@@ -246,7 +243,7 @@ export default function Home() {
 
       {/* INSIGHTS LAB */}
       <section className="px-6 md:px-12 py-32 border-t border-white/[0.06]">
-        <div className="flex justify-between items-start mb-16">
+        <div className="flex justify-between items-baseline mb-16">
           <SectionLabel number="05" label="INSIGHTS" />
           <Link href="/insights">
             <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/35 hover:text-white transition-colors">EXPLORE INSIGHTS →</span>
