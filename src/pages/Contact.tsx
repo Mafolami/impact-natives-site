@@ -12,7 +12,7 @@ export default function Contact() {
   
     if (!allFilled) return;
   
-    await fetch("https://impact-natives.vercel.app/api/contact", {
+    await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
