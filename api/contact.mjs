@@ -1,9 +1,8 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
-const { Resend } = require("resend");
+import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.re_YbhhwGiG_9ac2fDhw4zs6h5WJdDBAK3SU);
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
