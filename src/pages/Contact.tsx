@@ -3,9 +3,9 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Contact() {
-  const [form, setForm] = useState({ institution: "", inquiry: "", context: "" });
+  const [form, setForm] = useState({ institution: "", inquiry: "", context: "", email: "" });
   const [submitted, setSubmitted] = useState(false);
-  const allFilled = form.institution.trim() && form.inquiry.trim() && form.context.trim();
+  const allFilled = form.email.trim() && form.institution.trim() && form.inquiry.trim() && form.context.trim();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -28,8 +28,8 @@ export default function Contact() {
     return (
       <div className="px-6 md:px-12 py-40 flex items-center justify-center min-h-[60vh]">
         <div className="text-center">
-          <h2 className="font-serif font-light mb-4" style={{ fontSize: "clamp(36px, 5vw, 64px)" }}>Brief Received.</h2>
-          <p className="font-serif italic text-[16px] text-white/45">We will be in touch within 3–5 business days.</p>
+          <h2 className="sans-serif font-light mb-4" style={{ fontSize: "clamp(36px, 5vw, 64px)" }}>Brief Received.</h2>
+          <p className="sans-serif italic text-[16px] text-white/45">We will be in touch within 3–5 business days.</p>
         </div>
       </div>
     );
@@ -77,6 +77,14 @@ export default function Contact() {
               }} />
             ))}
 
+            <div className="mb-12">
+              <label className="sans-mono text-[10px] uppercase tracking-[0.15em] text-white/30 block mb-4">00. EMAIL ADDRESS</label>
+              <input value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
+                placeholder="your@email.com"
+                type="email"
+                className="sans-serif italic bg-transparent border-0 border-b border-white/10 w-full text-white/50 placeholder:text-white/20 outline-none pb-2 focus:border-white/30 transition-colors"
+                style={{ fontSize: "clamp(14px,2vw,10px)" }} />
+            </div>
             <div className="mb-12">
               <label className="sans-mono text-[10px] uppercase tracking-[0.15em] text-white/30 block mb-4">01. INSTITUTION / ORGANISATION</label>
               <input value={form.institution} onChange={(e) => setForm({ ...form, institution: e.target.value })}

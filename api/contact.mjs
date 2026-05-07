@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.re_h7EVZgR2_EoXn5w1P8zdDBdk3559Ss5No);
+const resend = new Resend(process.env.re_Rp3iDDvr_DkmsqzYtXe13v8XMnfovQJtw);
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -10,14 +10,16 @@ export default async function handler(req, res) {
   if (req.method === "OPTIONS") return res.status(200).end();
   if (req.method !== "POST") return res.status(405).json({ ok: false });
 
-  const { institution, inquiry, context } = req.body || {};
+  const { institution, inquiry, context, email } = req.body || {};
 
   try {
     await resend.emails.send({
       from: "contact@contact.impactnatives.com",
       to: "impactnativesltd@gmail.com",
+      reply_to: email,
       subject: "New Brief Submission",
       html: `
+        <p><b>From:</b> ${email}</p>
         <p><b>Institution:</b> ${institution}</p>
         <p><b>Inquiry:</b> ${inquiry}</p>
         <p><b>Context:</b> ${context}</p>
