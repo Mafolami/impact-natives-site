@@ -213,10 +213,10 @@ export default function Home() {
 
       {/* SELECTED WORK */}
       <section className="px-6 md:px-12 py-32 border-t border-white/[0.06]">
-        <div className="flex justify-between items-start mb-16">
+        <div className="flex justify-between items-baseline mb-16">
           <SectionLabel number="04" label="FIELD SIGNALS" />
           <Link href="/work">
-            <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/35 hover:text-white transition-colors">VIEW ALL SIGNALS →</span>
+          <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/35 hover:text-white transition-colors relative top-[0px]">VIEW ALL SIGNALS →</span>
           </Link>
         </div>
         <div>
@@ -226,8 +226,8 @@ export default function Home() {
                 <div className="border-t border-white/10 py-20 flex items-baseline justify-between group hover:bg-white/[0.02] transition-colors px-2 -mx-2">
                   <span className="font-mono text-[13px] text-white/25 group-hover:text-[#c74b28] transition-colors w-12">{row.num}</span>
                   <div className="flex-1 px-8">
-                    <p className="sans-serif text-[clamp(10px,2.5vw,30px)] text-white/85 group-hover:italic transition-all">{row.title}</p>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-white/30 mt-1">{row.client}</p>
+                    <p className="sans-serif text-[clamp(20px,2.5vw,30px)] text-white/85 group-hover:italic transition-all">{row.title}</p>
+                    <p className="font-mono text-[15px] uppercase tracking-[0.1em] text-white/30 mt-1">{row.client}</p>
                   </div>
                   <div className="hidden md:block w-40 h-8 opacity-0 group-hover:opacity-100 transition-opacity mx-8">
                     <svg viewBox="0 0 160 32" className="w-full h-full">

@@ -48,7 +48,7 @@ export default function Footer() {
 
       <div className="overflow-hidden">
         <p className="font-serif font-light text-white/[.40] whitespace-nowrap leading-none select-none"
-          style={{ fontSize: "clamp(80px, 14vw, 200px)" }}>
+          style={{ fontSize: "clamp(50px, 14vw, 200px)" }}>
           IMPACT NATIVES
         </p>
       </div>
