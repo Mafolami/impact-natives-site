@@ -49,10 +49,10 @@ export default function Insights() {
       <SectionLabel number="02" label="INSIGHTS" />
 
       <ScrollReveal>
-        <h1 className="font-serif font-light leading-tight mb-4" style={{ fontSize: "clamp(48px, 7vw, 96px)" }}>
-          Journal &amp; <em>Signals</em>
+        <h1 className="sans-serif font-light leading-tight mb-4" style={{ fontSize: "clamp(38px, 7vw, 96px)" }}>
+          Journal &amp; <em>Insights</em>
         </h1>
-        <p className="font-serif text-[16px] text-white/45 max-w-md leading-relaxed mb-16">
+        <p className="sans-serif text-[16px] italic text-white/45 max-w-md leading-relaxed mb-16">
           Essays, field notes, and structural observations.
         </p>
       </ScrollReveal>

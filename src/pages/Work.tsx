@@ -16,18 +16,7 @@ const PROJECTS = [
     effort: "We consolidated fragmented internal priorities into a single decision framework. Three distinct youth employment models were designed with clear differences in cost structure, implementation logic, and partner dependency. Each option was translated into a board-readable format aligned with internal governance requirements, including risk flags and implementation feasibility notes.",
     outcome: "The foundation moved from fragmented programme proposals to a structured decision set that enabled internal comparison and selection within a defined approval cycle. The engagement created a repeatable format for evaluating future CSR investments in youth employment.",
     // SVG: U-curve (recovery arc)
-    svg: (
-      <svg viewBox="0 0 480 320" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5"/>
-          </pattern>
-        </defs>
-        <rect width="480" height="320" fill="url(#grid1)"/>
-        <path d="M 40,60 C 120,280 360,280 440,60" fill="none" stroke={ACCENT} strokeWidth="1.5" strokeLinecap="round"/>
-        <text x="360" y="290" fontFamily="JetBrains Mono" fontSize="72" fill="rgba(255,255,255,0.06)" fontWeight="bold">01</text>
-      </svg>
-    ),
+    image: "/public/yep.png",
   },
   {
     id: "csr-data",
@@ -40,18 +29,7 @@ const PROJECTS = [
     effort: "We mapped all active programme investments and identified structural overlaps, duplication of outcomes, and misaligned funding logic. A consolidated portfolio structure was designed, grouping initiatives into three investment categories with clear decision criteria for continuation, merger, or phase-out.",
     outcome: "The organisation gained a structured portfolio view that supported clearer allocation decisions in the next funding cycle and reduced internal duplication across overlapping programme areas.",
     // SVG: declining then flat line (data visibility)
-    svg: (
-      <svg viewBox="0 0 480 320" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5"/>
-          </pattern>
-        </defs>
-        <rect width="480" height="320" fill="url(#grid2)"/>
-        <path d="M 40,80 L 200,240 L 440,240" fill="none" stroke={ACCENT} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <text x="340" y="300" fontFamily="JetBrains Mono" fontSize="72" fill="rgba(255,255,255,0.06)" fontWeight="bold">02</text>
-      </svg>
-    ),
+image: "/public/csr.png",
   },
   {
     id: "climate-finance",
@@ -64,18 +42,7 @@ const PROJECTS = [
     effort: "We synthesised fragmented technical proposals into three viable intervention models, each aligned to funding criteria, implementation feasibility, and institutional risk thresholds. A final option was developed into a structured funding submission package with defined governance, cost breakdown, and implementation sequencing.",
     outcome: "The submission moved from fragmented technical inputs to a single structured funding-ready intervention aligned to donor and institutional requirements. The process established a reusable template for future climate adaptation funding windows.",
     // SVG: declining line (disbursement compression)
-    svg: (
-      <svg viewBox="0 0 480 320" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5"/>
-          </pattern>
-        </defs>
-        <rect width="480" height="320" fill="url(#grid3)"/>
-        <path d="M 40,80 C 160,80 200,240 440,260" fill="none" stroke={ACCENT} strokeWidth="1.5" strokeLinecap="round"/>
-        <text x="340" y="300" fontFamily="JetBrains Mono" fontSize="72" fill="rgba(255,255,255,0.06)" fontWeight="bold">03</text>
-      </svg>
-    ),
+    image: "/public/flood.png",
   },
 ];
 
@@ -99,8 +66,17 @@ export default function Work() {
             <div id={project.id} className="grid md:grid-cols-2 gap-0 border-t border-white/[0.06] py-24">
 
               {/* Left — SVG graphic */}
-              <div className="border border-white/[0.08] aspect-[4/3] p-0 overflow-hidden">
-                {project.svg}
+              <div className="border border-white/[0.58] aspect-[4/3] p-0 overflow-hidden">
+                {project.svg ? (
+                  project.svg
+                ) : project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                ) : null}
                   </div>
 
               {/* Right — Content */}

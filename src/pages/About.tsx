@@ -51,33 +51,37 @@ export default function About() {
       <SectionLabel number="03" label="ABOUT IMPACT NATIVES" />
       <ScrollReveal>
   <h1
-    className="sans-serif font-light leading-tight mb-12"
+    className="sans-serif font-bold leading-tight mb-12"
     style={{ fontSize: "clamp(56px, 8vw, 50px)" }}
   >
-    What is <em>Impact Natives?</em>
+     ABOUT <br /> 
+     <h2
+    className="sans-serif font-light leading-tight mb-12"
+    style={{ fontSize: "clamp(46px, 9vw, 20px)" }}>
+
+    
+     <em>- Impact Natives</em>
+     </h2>
+
   </h1>
 
-  <div className="grid grid-cols-1 md:grid-cols-[650px_1fr] gap-5 items-start">
+  <div className="grid grid-cols-1 text-[23px] md:grid-cols-[650px_1fr] gap-12 items-start">
     
     {/* TEXT */}
-    <div className="max-w-1xl space-y-6">
-      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
+    <div className="max-w-1xl space-y-6 text-justify">
+      <p className="sans-serif text-white/60 leading-relaxed">
         Impact Natives exists to address a structural failure in how institutions move from intent to execution: strong ideas that do not survive the transition into funded, operational delivery.
       </p>
 
-      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
+      <p className="sans-serif text-white/60 leading-relaxed">
         Across programmes in public systems, CSR portfolios, and development initiatives, we saw the same pattern. Promising interventions stall not because the ideas are weak, but because the systems around them are not structured for execution at scale.
       </p>
 
-      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
-        Financing is misaligned. Delivery capacity is fragmented. Governance requirements are incomplete at the design stage.
+      <p className="sans-serif text-white/60 leading-relaxed">
+        Financing is misaligned. Delivery capacity is fragmented. Governance requirements are incomplete at the design stage. We focus on the layer that connects intent to implementation.
       </p>
 
-      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
-        We focus on the layer that connects intent to implementation.
-      </p>
-
-      <p className="sans-serif text-[17px] text-white/60 leading-relaxed">
+      <p className="sans-serif text-white/60 leading-relaxed">
         We design structured decision inputs, intervention models, and implementation pathways that can survive institutional approval and move into delivery.
       </p>
 
@@ -91,12 +95,19 @@ export default function About() {
         className="w-full h-auto object-cover rounded-xl opacity-90"
       />
     </div>
+    <div className="flex-2">
+      <img
+        src="/build.png"
+        alt="Impact Natives"
+        className="w-full h-720px object-cover rounded-3xl opacity-90"
+      />
+    </div>
 
   </div>
 </ScrollReveal>
 
-      <section className="mt-40 mb-40">
-        <p className="font-mono text-[20px] uppercase tracking-[0.2em] text-white/30 text-center mb-20">OPERATING PRINCIPLES</p>
+      <section className="mt-60 mb-40">
+        <p className="sans-mono text-[40px] font-bold uppercase tracking-[0.2em] text-white/90 text-center mb-20">OPERATING PRINCIPLES</p>
         <div>
           {PRINCIPLES.map((p, i) => (
             <ScrollReveal key={p.num} delay={i * 0.08}>
