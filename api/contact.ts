@@ -23,7 +23,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "contact@impactnatives.com",
       to: "impactnativesltd@gmail.com",
       subject: "New Brief Submission",
       html: `
@@ -35,6 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     return res.status(200).json({ ok: true });
   } catch (e) {
-    return res.status(500).json({ ok: false });
+    console.error("Resend error:", e);
+    return res.status(500).json({ ok: false, error: String(e) });
   }
 }
