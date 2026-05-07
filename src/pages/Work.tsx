@@ -67,16 +67,12 @@ export default function Work() {
 
               {/* Left — SVG graphic */}
               <div className="border border-white/[0.58] aspect-[4/3] p-0 overflow-hidden">
-                {project.svg ? (
-                  project.svg
-                ) : project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                ) : null}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
                   </div>
 
               {/* Right — Content */}

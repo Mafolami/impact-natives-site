@@ -85,7 +85,7 @@ export default function Insights() {
                 </div>
 
                 {/* TEXT (RIGHT) */}
-                <div className="grid items-start" style={{ gridTemplateColumns: "140px 1fr 100px", gap: "1rem" }}>
+                <div className="grid items-start grid-cols-1 md:grid-cols-[140px_1fr_100px] gap-4">
                   
                   <div>
                     <p className="sans-mono text-[10px] uppercase tracking-[0.12em] mb-2" style={{ color: ACCENT }}>
@@ -99,7 +99,7 @@ export default function Insights() {
                   <div>
                     <p
                       className={`sans-serif leading-tight mb-12 ${entry.italic ? "italic" : ""}`}
-                      style={{ fontSize: "clamp(22px, 2.5vw, 40px)" }}
+                      style={{ fontSize: "clamp(16px, 2.5vw, 40px)" }}
                     >
                       {entry.title}
                     </p>

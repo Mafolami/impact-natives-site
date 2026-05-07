@@ -107,15 +107,15 @@ export default function About() {
 </ScrollReveal>
 
       <section className="mt-60 mb-40">
-        <p className="sans-mono text-[40px] font-bold uppercase tracking-[0.2em] text-white/90 text-center mb-20">OPERATING PRINCIPLES</p>
+        <p className="sans-mono text-[22px] md:text-[40px] font-bold uppercase tracking-[0.2em] text-white/90 text-center mb-20">OPERATING PRINCIPLES</p>
         <div>
           {PRINCIPLES.map((p, i) => (
             <ScrollReveal key={p.num} delay={i * 0.08}>
-              <div className="grid py-16 border-t border-white/[0.06]"
-                style={{ gridTemplateColumns: "80px 1fr 1fr", gap: "2rem" }}>
-                <span className="font-mono text-[18px] text-white/25">{p.num}</span>
+              <div className="grid py-16 border-t border-white/[0.06] grid-cols-1 md:grid-cols-[80px_1fr_1fr] gap-4 md:gap-8">
+                
+                <span className="hidden md:block font-mono text-[18px] text-white/25">{p.num}</span>
                 <p className="sans-serif text-[clamp(18px,2vw,22px)] text-white/80">{p.title}</p>
-                <p className="sans-serif text-[22px] text-white/50 leading-relaxed">{p.desc}</p>
+                <p className="sans-serif text-[16px] md:text-[22px] text-white/50 leading-relaxed">{p.desc}</p>
               </div>
             </ScrollReveal>
           ))}

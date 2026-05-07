@@ -99,32 +99,32 @@ export default function Home() {
       <section ref={manifestoRef} className="px-6 md:px-14 py-40">
         <SectionLabel number="01" label="MANIFESTO" />
         <ScrollReveal>
-          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[920px] mx-50"
-            style={{ fontSize: "clamp(36px, 5.5vw, 60px)" }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[920px] mx-0 md:mx-50"
+            style={{ fontSize: "clamp(20px, 5.5vw, 60px)" }}>
             Ideas are not the problem.
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-50"
-            style={{ fontSize: "clamp(36px, 5.5vw, 60px)" }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-0 md:mx-50"
+            style={{ fontSize: "clamp(20px, 5.5vw, 60px)" }}>
             Most institutions already have more priorities than they can move forward.
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-50"
-            style={{ fontSize: "clamp(36px, 5.5vw, 60px)" }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-0 md:mx-50"
+            style={{ fontSize: "clamp(20px, 5.5vw, 60px)" }}>
             The gap is between intent and a decision that can be approved.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
-          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[620px] mx-50"
-            style={{ fontSize: "clamp(36px, 5.5vw, 60px)", color: ACCENT, fontWeight: 300 }}>
+          <p className="sans-serif leading-[1.15] mb-15 font-light max-w-[620px] mx-0 md:mx-50"
+            style={{ fontSize: "clamp(20px, 5.5vw, 60px)", color: ACCENT, fontWeight: 300 }}>
             Budgets stall. Proposals circulate. Work does not move.
           </p>
         </ScrollReveal>
         <motion.p
-            className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-50"
-          style={{ fontSize: "clamp(36px, 5.5vw, 60px)", opacity: thirdOpacity, color: "rgba(244,244,240,0.35)" }}
+            className="sans-serif leading-[1.15] mb-15 font-light max-w-[auto] mx-0 md:mx-50"
+          style={{ fontSize: "clamp(20px, 5.5vw, 60px)", opacity: thirdOpacity, color: "rgba(244,244,240,0.35)" }}
         >
           We structure priorities into options decision-makers can evaluate and approve.
         </motion.p>
